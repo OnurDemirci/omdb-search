@@ -98,7 +98,7 @@ function callapi() {
           '<div class="result-container bg-light">'+
           '<div class="result">'+
           "<img src='"+posters[i]+"' onerror='imgError(this);'>"+
-          "<div class='result_info'><a href='https://www.imdb.com/title/"+ids[i]+"/?ref_=plg_rt_1' target = '_blank' class='align-middle'>"+titles[i]+"</a><label> &nbsp("+years[i]+")  &nbsp;</label>"+'<span class="imdbRatingPlugin" data-user="ur111775116" data-title="'+ids[i]+'" data-style="p5"></span></div>'+
+          "<div class='result_info'><div class='title'><a href='https://www.imdb.com/title/"+ids[i]+"/?ref_=plg_rt_1' target = '_blank' class='align-middle'>"+titles[i]+"</a></div><label> &nbsp("+years[i]+")  &nbsp;</label>"+'<span class="imdbRatingPlugin" data-user="ur111775116" data-title="'+ids[i]+'" data-style="p5"></span></div>'+
           '<span onclick=like(this.id) class="heart" id = '+ids[i]+'><i class="fa fa-heart-o" aria-hidden="true" ></i> </span>'+'</div></div>'
           //for (var i = 0; i < ids.length; i++) {
           //  document.getElementById("scores").innerHTML +='<span class="imdbRatingPlugin" data-user="ur111775116" data-title="'+ids[i]+'" data-style="p5"><a href="https://www.imdb.com/title/'+ids[i]+'/?ref_=plg_rt_1"></a></span>'
@@ -131,7 +131,7 @@ function getFavorites() {
       $.getJSON("https://www.omdbapi.com/?apikey=95440045&i="+locals[i]).then(function (favs) {
         document.getElementById("results").innerHTML +='<div class="result-container bg-light">'+'<div class="result">'+
         "<img src='"+favs.Poster+"' onerror='imgError(this);'>"+
-        "<div class='result_info'><a href='https://www.imdb.com/title/"+favs.imdbID+"/?ref_=plg_rt_1' target = '_blank' class='align-middle'>"+favs.Title+"</a><label> &nbsp("+favs.Year+")  &nbsp; <strong>"+favs.imdbRating+"</strong>/10 <span class='votes'>"+favs.imdbVotes+" votes</span></label>"+'</div>'+
+        "<div class='result_info'><div class='title'><a href='https://www.imdb.com/title/"+favs.imdbID+"/?ref_=plg_rt_1' target = '_blank' class='align-middle'>"+favs.Title+"</a></div><label> &nbsp("+favs.Year+")  &nbsp; <strong>"+favs.imdbRating+"</strong>/10 <span class='votes'>"+favs.imdbVotes+" votes</span></label>"+'</div>'+
         '<span onclick=like(this.id) class="heart liked" id = '+favs.imdbID+'><i class="fa fa-heart" aria-hidden="true" ></i> </span>'+'</div></div>';
         console.log(favs);
       })

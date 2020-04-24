@@ -109,6 +109,49 @@ label {
   font-weight: lighter;
 }
 
+@media only screen and (max-width: 329px) {
+  .heart {
+    position: relative !important;
+    margin-left: 0 !important;
+    height: 25px;
+    padding: 0 10px;
+  }
+  .result_info {
+    display: block;
+    width: 380px;
+  }
+  .row {
+    display: block !important;
+    width: 100%;
+    margin: 0;
+  }
+  .col-sm-2 {
+    max-width: 100% !important;
+  }
+  .src-button{
+    margin-left: 4.5% !important;
+    max-width: 91% !important;
+    margin-top: 25px !important;
+  }
+  .result img {
+    min-width: 80px !important;
+    height: 140px !important;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .result_info a {
+    text-align: center;
+  }
+  .votes {
+    display: none !important;
+  }
+  .result-info a {
+    display: flex !important;
+    -webkit-line-clamp: 4 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+}
 @media only screen and (min-width: 330px)  and (max-width: 994px){
   .heart {
     position: relative !important;
