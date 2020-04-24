@@ -74,7 +74,7 @@ label {
   font-size: 25px !important;
 }
 .imdbRatingPlugin {
-  margin-top: 5px !important;
+  margin-top: 3px !important;
 }
 .result_info {
   display: flex;
@@ -93,4 +93,97 @@ label {
   top: 55%;
   transform: translate(-50%, -50%);
   z-index:-100;
+  opacity: .5;
+}
+#results {
+  text-align: center;
+}
+#results h2 {
+  margin-top: 200px;
+}
+
+.imdbRatingPlugin .rating {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.rating .ofTen {
+  font-weight: lighter;
+}
+
+@media only screen and (min-width: 330px)  and (max-width: 994px){
+  .heart {
+    position: relative !important;
+    margin-left: 0 !important;
+    height: 25px;
+    padding: 0 10px;
+  }
+  .result_info {
+    display: block;
+    width: 380px;
+  }
+  .row {
+    display: block !important;
+    width: 100%;
+    margin: 0;
+  }
+  .col-sm-2 {
+    max-width: 100% !important;
+  }
+  .src-button{
+    margin-left: 4.5% !important;
+    max-width: 91% !important;
+    margin-top: 25px !important;
+  }
+  .result img {
+    min-width: 120px !important;
+    height: 180px !important;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .result_info a {
+    text-align: center;
+  }
+  .votes {
+    display: none !important;
+  }
+
+}
+
+@media only screen and (min-width: 995px)  and (max-width: 1200px){
+  .heart {
+    position: absolute !important;
+    margin-left: 78% !important;
+    height: 25px;
+    padding: 0 10px;
+  }
+  .result_info {
+    display: block;
+    width: 65% !important;
+  }
+  .row {
+    display: block !important;
+    width: 100%;
+    margin: 0;
+  }
+  .col-sm-2 {
+    max-width: 100% !important;
+  }
+  .src-button{
+    margin-left: 1.5% !important;
+    max-width: 97% !important;
+    margin-top: 25px !important;
+  }
+  .result img {
+    min-width: 120px !important;
+    height: 180px !important;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .result_info a {
+    text-align: center;
+  }
+  .votes {
+    display: none !important;
+  }
+
+
 }
