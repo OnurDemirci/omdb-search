@@ -1,0 +1,96 @@
+.search-container {
+  padding: 15px;
+}
+.src-button {
+  margin-left:20px !important;
+}
+.result-container {
+  height: 200px;
+  border-radius: 4px;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+  margin: 10px;
+}
+.result {
+  width: 95%;
+  height: 175px;
+  padding-top: 10px;
+  margin: auto;
+  color: black;
+  font-size: 18px;
+  display: flex;
+
+}
+.result span {
+  font-size: 15px !important;
+}
+.result a {
+  color:black;
+  margin-left: 10px;
+  font-size: 18px;
+}
+.result img {
+  width: 150px;
+  height: 175px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,1);
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,1);
+  object-fit: contain;
+}
+
+a {
+  color:white;
+}
+label {
+  color: white;
+}
+.result label {
+  color: black !important;
+  font-size: 18px;
+}
+.fa-heart-o {
+  color: #ff0037;
+  cursor: pointer;
+}
+
+.fa-heart {
+  color: #ff0037;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.heart {
+  position: absolute;
+  margin-top: 67px;
+  margin-left: 950px;
+
+}
+.heart .fa-heart-o {
+  font-size: 25px !important;
+}
+.heart .fa-heart {
+  font-size: 25px !important;
+}
+.imdbRatingPlugin {
+  margin-top: 5px !important;
+}
+.result_info {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.bg-image {
+  background-image: url("../images/clapper.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  z-index:-100;
+}

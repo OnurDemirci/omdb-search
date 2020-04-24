@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.core.min.js" integrity="sha256-yEkk5ZYVs/fZgvxWU+sCb8bHTk9jScxIaZQD+CZ4vcg=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <meta charset="utf-8">
+    <title>OMDb Search</title>
+  </head>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100 p-2">
+<div class="container">
+
+<a class="navbar-brand" href="#">OMDb Search</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active text-secondary">
+      <a class="nav-link" href="index.html"><i class="fas fa-search"></i> Search Page <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="favorites.html"><i class="fas fa-heart"></i> Favorites</a>
+    </li>
+  </ul>
+</div></div>
+</nav>
+    <div class="container">
+      <div class="bg-image">
+
+      </div>
+      <div class="search-container">
+      <div class="form-group row">
+        <label for="film_name" class="col-form-label">Film Name:</label>
+        <div class="col-sm-2">
+        <input id="filmName" class="form-control" type="text" name="film_name" value="">
+        </div>
+        <label for="year" class="col-form-label">Year:</label>
+        <div class="col-sm-2">
+          <input id="filmYear" class="form-control" type="number" min="1874" max="2020" name="year" value="">
+        </div>
+        <label for="type" class="col-form-label">Type</label>
+        <div class="col-sm-2">
+        <select id="type" class="form-control form-control-md" name="type" value="">
+          <option selected hidden disabled value></option>
+          <option value="movie">Movie</option>
+          <option value="series">Series</option>
+          <option value="episode">Episode</option>
+        </select>
+        </div>
+        <button type="button" onclick="callfuncs();" class="btn btn-light col-md-2 src-button" name="button"><i class="fas fa-search"></i>  Search</button>
+      </div>
+    </div>
+    <div id="results">
+
+    </div>
+  </div>
+  </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/4b5e7f745c.js" crossorigin="anonymous"></script>
