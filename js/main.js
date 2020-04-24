@@ -1,7 +1,9 @@
 storage = Object.entries(localStorage);
 locals = [];
 for (var i = 0; i < storage.length; i++) {
-  locals.push(storage[i][0]);
+	if (storage[i][1]=="Favorite") {
+		locals.push(storage[i][0]);
+	}
 }
 function checkFavorites() {
   var x = document.getElementsByClassName("heart");
